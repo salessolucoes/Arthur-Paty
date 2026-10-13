@@ -1,0 +1,11 @@
+CONVITE ARTHUR & PATY - VERSAO FINAL (Modelo 1 Verde Classico)
+
+Fotos: foto1 = capa | foto2, foto3, foto4 = carrossel "Nossos momentos"
+Pra trocar ou adicionar foto: coloque na pasta fotos e ajuste a lista "fotos" no config.js.
+
+AINDA FALTA PREENCHER NO config.js:
+[ ] whatsapp da noiva e do noivo (55 + DDD + numero, so numeros)
+[ ] cidade do salao (ou link do Maps em linkMaps)
+[ ] confirmar a data: 12/06/2030 cai numa quarta-feira
+[ ] musica do casal (troque o musica.mp3 mantendo o mesmo nome)
+[ ] chave Pix (opcional; vazia = a parte do Pix fica escondida)

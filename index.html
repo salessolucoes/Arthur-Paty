@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#17251d">
+<title>Arthur &amp; Paty | Convite</title>
+<meta property="og:title" content="Arthur &amp; Paty · Casamento">
+<meta property="og:description" content="Você é nosso convidado especial. Toque para abrir o convite.">
+<meta property="og:image" content="fotos/capa-whatsapp.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="travado">
+<audio id="musica" loop preload="auto"></audio>
+
+<main id="abertura" class="envelope-screen">
+  <div class="envelope-container">
+    <button id="abrir" class="envelope-btn" type="button" aria-label="Abrir convite">
+      <span class="cover-art">
+        <span class="cover-seal"><span data-c="inicial-noivo">A</span><small>&amp;</small><span data-c="inicial-noiva">P</span></span>
+        <span class="cover-monogram"><span data-c="inicial-noivo">A</span> <i>&amp;</i> <span data-c="inicial-noiva">P</span></span>
+      </span>
+    </button>
+    <div class="envelope-text">
+      <p class="envelope-label">Toque para abrir o convite</p>
+      <span class="envelope-arrow" aria-hidden="true">↓</span>
+    </div>
+  </div>
+</main>
+
+<div class="convite">
+  <div class="wrapper">
+    <section class="hero-section">
+      <div class="hero-photo-wrap">
+        <img data-foto="0" alt="" class="hero-photo">
+        <div class="hero-fade"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-c="frase">Junto de nossas famílias</p>
+        <p class="intro-text" data-c="convite">É com muita alegria que convidamos você para o nosso casamento.</p>
+        <h1><span data-c="noivo">Arthur</span> <span class="e">&amp;</span> <span data-c="noiva">Paty</span></h1>
+        <p class="hero-date" data-c="data-hora">12 · 06 · 2030 · 15:00</p>
+      </div>
+    </section>
+
+    <section class="invitation-message pad centro">
+      <p class="script-lead rv">Você é nosso convidado especial</p>
+      <p class="texto rv" data-c="especial"></p>
+      <div class="gold-rule rv"><span>✦</span></div>
+      <div class="date-grid rv">
+        <div><strong data-c="dia">12</strong><small data-c="semana">QUARTA</small></div>
+        <div><strong data-c="mes">06</strong><small data-c="mes-nome">JUNHO</small></div>
+        <div><strong data-c="hora">15:00</strong><small>HORAS</small></div>
+      </div>
+    </section>
+
+    <section class="carousel-section pad">
+      <div class="section-heading rv"><span>Nossos momentos</span><i></i></div>
+      <div class="carrossel rv" id="carrossel"></div>
+    </section>
+
+    <section class="countdown-section pad centro">
+      <p class="card-kicker rv">Contagem regressiva</p>
+      <p class="script-lead rv">Até o nosso grande dia</p>
+      <div class="rv"><div class="cd-boxes">
+          <div><strong id="cd-dias">0</strong><small>dias</small></div>
+          <div><strong id="cd-horas">0</strong><small>horas</small></div>
+          <div><strong id="cd-minutos">0</strong><small>minutos</small></div>
+          <div><strong id="cd-segundos">0</strong><small>segundos</small></div>
+        </div></div>
+    </section>
+
+    <section class="pad ">
+        <div class="section-heading rv"><span>Escolha como participar</span><i></i></div>
+        <p class="prazo rv" data-se="rsvpPrazo" data-c="prazo"></p>
+        <div class="acoes rv" id="rsvp-botoes"></div>
+      </section>
+
+    <section class="pad ">
+        <div class="section-heading rv"><span>Local do casamento</span><i></i></div>
+        <div class="rv"><div class="acoes">
+          <a class="acao" data-link="maps" href="#"><span class="acao-icone" aria-hidden="true">⌖</span><span class="acao-txt"><b data-c="local-nome">Natureza Buffet e Eventos</b><small data-c="local-endereco">Ver no Google Maps</small></span><em aria-hidden="true">›</em></a>
+          <a class="acao" data-link="waze" href="#"><span class="acao-icone" aria-hidden="true">➤</span><span class="acao-txt"><b>Ir pelo Waze</b><small>Rota até o local</small></span><em aria-hidden="true">›</em></a>
+          <a class="acao" data-acao="agenda" href="#"><span class="acao-icone" aria-hidden="true">◷</span><span class="acao-txt"><b>Salvar na agenda</b><small>Para não esquecer a data</small></span><em aria-hidden="true">›</em></a>
+        </div></div>
+        <div class="traje rv" data-se="traje"><p class="kicker">Traje</p><p data-c="traje"></p></div>
+      </section>
+
+    <section class="pad secao-pix centro" data-se="pix.chave">
+        <p class="kicker rv">Presente</p>
+        <p class="script-lead rv">Com carinho</p>
+        <p class="texto rv" data-c="presentes-texto"></p>
+        <div class="acoes rv">
+          <button class="acao" type="button" data-acao="pix-livre"><span class="acao-icone" aria-hidden="true">✦</span><span class="acao-txt"><b>Presentear com Pix</b><small>QR Code ou copia e cola</small></span><em aria-hidden="true">›</em></button>
+        </div>
+      </section>
+
+    <footer class="footer-section">
+      <div class="gold-rule"><span>✦</span></div>
+      <p data-c="despedida">Esperamos você para viver este momento conosco.</p>
+      <div class="footer-names"><span data-c="noivo">Arthur</span> <span class="e">&amp;</span> <span data-c="noiva">Paty</span></div>
+      <small data-c="assinatura">Com carinho, os noivos</small>
+      <button class="compartilhar" type="button" data-acao="compartilhar">Compartilhar convite</button>
+    </footer>
+  </div>
+</div>
+
+<div class="folha" id="folha-rsvp" hidden role="dialog" aria-modal="true" aria-labelledby="rsvp-titulo">
+  <div class="folha-caixa">
+    <button class="folha-x" type="button" data-fechar aria-label="Fechar">×</button>
+    <p class="script-lead" id="rsvp-titulo">Confirmar presença</p>
+    <p class="folha-sub" id="rsvp-para">Enviar pelo WhatsApp</p>
+    <form id="rsvp-form" autocomplete="on" novalidate>
+      <div class="escolha">
+        <button type="button" data-vai="sim" class="ativo" aria-pressed="true">Estarei presente</button>
+        <button type="button" data-vai="nao" aria-pressed="false">Não poderei ir</button>
+      </div>
+      <label class="campo"><span>Seu nome</span><input name="nome" maxlength="60" autocomplete="name"></label>
+      <label class="campo" id="campo-qtd"><span>Quantas pessoas, contando com você</span>
+        <select name="qtd"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+      <label class="campo"><span>Recado para os noivos (opcional)</span><textarea name="recado" maxlength="300"></textarea></label>
+      <button class="btn-principal" type="button" id="rsvp-enviar">Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<div class="folha" id="folha-pix" hidden role="dialog" aria-modal="true" aria-labelledby="pix-titulo">
+  <div class="folha-caixa">
+    <button class="folha-x" type="button" data-fechar aria-label="Fechar">×</button>
+    <p class="kicker">Presente</p>
+    <p class="script-lead" id="pix-titulo">Presente em Pix</p>
+    <p id="pix-valor">Valor livre</p>
+    <div id="pix-qr"></div>
+    <p class="pix-aviso" id="pix-aviso" hidden>A chave Pix dos noivos será cadastrada em breve.</p>
+    <button class="btn-principal" type="button" id="pix-copia">Copiar Pix copia e cola</button>
+    <p class="miuda">No app do seu banco, escolha Pix › Ler QR Code ou Pix copia e cola.</p>
+  </div>
+</div>
+
+<button id="btn-som" type="button" aria-label="Ligar ou desligar a música">♪</button>
+
+<script src="config.js" defer></script>
+<script src="qr.js" defer></script>
+<script src="core.js" defer></script>
+<script src="abertura.js" defer></script>
+</body>
+</html>
