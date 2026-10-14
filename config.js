@@ -27,9 +27,7 @@ window.CONVITE = {
 
   // Confirmação: um botão por linha. whatsapp = 55 + DDD + número, só números
   confirmacao: [
-    { rotulo: 'Confirmar presença', detalhe: 'Enviar confirmação para a noiva', whatsapp: '' },
-    { rotulo: 'Confirmar presença', detalhe: 'Enviar confirmação para o noivo', whatsapp: '' }
-    // { rotulo: 'Confirmar via Zoom', detalhe: 'Enviar confirmação para o noivo', whatsapp: '', tipo: 'online' }
+    { rotulo: 'Confirmar presença', detalhe: 'Enviar confirmação pelo WhatsApp', whatsapp: '5522998508630' }
   ],
 
   // Fotos na pasta "fotos". A 1ª é a capa; as outras vão para o carrossel
